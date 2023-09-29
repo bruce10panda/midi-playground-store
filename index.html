@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #111;
+      color: white;
+      scroll-snap-align: start;
+    }
+
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2rem;
+    }
+
+    .project-card {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .project-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .text {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      background: linear-gradient(45deg, #51b5c6, #f4c443, #da1b4b, #22aa33);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: fade-in 2s ease forwards;
+    }
+
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      background: linear-gradient(45deg, #51b5c6, #f4c443, #da1b4b, #22aa33);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .project-link {
+      text-decoration: none;
+      color: white;
+    }
+
+    .button {
+      display: inline-block;
+      background: linear-gradient(45deg, #51b5c6, #f4c443, #da1b4b);
+      border: none;
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 10px 20px;
+      margin-top: 1rem;
+      cursor: pointer;
+      text-decoration: none; /* Remove underline */
+      transition: transform 0.2s;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes fade-in {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <title>midi playground store</title>
+</head>
+<body>
+  <div class="section" id="projects" style="background-color: #111;">
+    <div class="container text-container">
+      <h2 class="text">midi playground store</h2>
+    </div>
+    
+    <div class="project-list">
+      <div class="project-card">
+        <img src="https://imgs.search.brave.com/h7gJJZFP1ytprWH9SXTFVLtXhXU13-IZ41q3qB8EtTQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzY2Lzk2LzE1/LzM2MF9GXzE2Njk2/MTUyMV9pdXowa3cx/ZVJlR0F5ajBTc01l/bnpoVWg4QXEydVh2/VC5qcGc" alt="App 1">
+        <h2>tetris</h2>
+        <a href="https://drive.google.com/uc?export=download&id=1jOHPuSEIRHLwpNJker9MRpNW4ydxepwr" class="button">download</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://i.scdn.co/image/ab67616d0000b273d227932f0e6543992009e978" alt="App 1">
+        <h2>rush e</h2>
+        <a href="https://drive.google.com/uc?export=download&id=10vHN5nFwWzybCLYMsZeTS8myt8loVVYs" class="button">download</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://imgs.search.brave.com/sRtCA2PWHrY9qGvkDKlxljodHTgxZgY2rx8FQQNgHNk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2Jh/ZHBpZ2dpZXMvaW1h/Z2VzLzcvN2YvQmFk/LXBpZ2dpZXMtZXhj/bHVzaXZlLWdhbWVw/bGF5LXRvcDYzMC5q/cGcvcmV2aXNpb24v/bGF0ZXN0P2NiPTIw/MTIxMDEwMDIzNTMx" alt="App 1">
+        <h2>bad piggies</h2>
+        <a href="https://drive.google.com/uc?export=download&id=1KeiVnV_AfYcnTVygZMz1HAHN2DlR_jcA" class="button">download</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://imgs.search.brave.com/h7gJJZFP1ytprWH9SXTFVLtXhXU13-IZ41q3qB8EtTQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAxLzY2Lzk2LzE1/LzM2MF9GXzE2Njk2/MTUyMV9pdXowa3cx/ZVJlR0F5ajBTc01l/bnpoVWg4QXEydVh2/VC5qcGc" alt="App 1">
+        <h2>tetris</h2>
+        <a href="https://drive.google.com/uc?export=download&id=1jOHPuSEIRHLwpNJker9MRpNW4ydxepwr" class="button">download</a>
+      </div>
+    </div>
+
+
+  <script>
+    let scrolling = false;
+    const sections = document.querySelectorAll('.section');
+    let currentSection = 0;
+
+    window.addEventListener('wheel', (e) => {
+      if (!scrolling) {
+        scrolling = true;
+        if (e.deltaY > 0 && currentSection < sections.length - 1) {
+          currentSection++;
+        } else if (e.deltaY < 0 && currentSection > 0) {
+          currentSection--;
+        }
+        sections[currentSection].scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          scrolling = false;
+        }, 800);
+      }
+    });
+  </script>
+</body>
+</html>
